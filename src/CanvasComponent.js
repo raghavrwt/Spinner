@@ -129,6 +129,10 @@ const CanvasComponent = (props) => {
                 onMouseMove={rotation}
                 onMouseUp={onSpin}
                 onMouseLeave={stopRotation}
+                onPointerDown={rotateAnticlockwise}
+                onPointerUp={onSpin}
+                onPointerMove={rotation}
+                onPointerLeave={stopRotation}
             />
             <button className='button-spin' onClick={onSpin}>Spin</button>
             <div className='pointer'>
